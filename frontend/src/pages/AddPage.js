@@ -4,7 +4,7 @@ import { ethers } from "ethers";
 import DocVerify from "../contracts/DocVerify.json";
 import { QRCodeCanvas } from "qrcode.react";
 
-const contractAddress = "0x76B7aB53421bD20Cf7B8aEEAA4Ca9c7Eecc9e745";
+const contractAddress = process.env.REACT_APP_SEPOLIA_CONTRACT_ADDRESS || "0x76B7aB53421bD20Cf7B8aEEAA4Ca9c7Eecc9e745";
 const hardhatChainId = "0xaa36a7";
 
 function AddPage() {
