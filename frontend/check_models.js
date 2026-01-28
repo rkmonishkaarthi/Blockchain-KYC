@@ -1,7 +1,7 @@
 const https = require('https');
 
-// The Key currently in use
-const API_KEY = "AIzaSyCKs1V-mYizoAJ21uPZJZliXbOwWUkt9pA";
+require('dotenv').config();
+const API_KEY = process.env.REACT_APP_GEMINI_API_KEY;
 
 const url = `https://generativelanguage.googleapis.com/v1beta/models?key=${API_KEY}`;
 
